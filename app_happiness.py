@@ -7,9 +7,7 @@ from dash import dash_table
 import dash_bootstrap_components as dbc
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output
+
 
 # Define your custom CSS styles
 custom_css = '''
@@ -119,10 +117,10 @@ happiness_total_avg = happiness_total_avg[['country','avg_score']]
 selected_countries = ['China', 'Indonesia', 'Croatia', 'France', 'Germany', 'Lithuania', 
                       'Netherlands', 'Poland', 'Spain', 'Turkey', 'New Zealand', 'Kenya','Cameroon']
 filter_hap_income = happiness_income[happiness_income['country'].isin(selected_countries)]
-filter_hap_income['country'] = pd.Categorical(filter_hap_income['country'], categories=selected_countries, ordered=True)
+filter_hap_income.loc[:, 'country'] = pd.Categorical(filter_hap_income['country'], categories=selected_countries, ordered=True)
 filter_hap_income = filter_hap_income.sort_values(['year','country'])
 filter_hap_gouv = happiness_gouv[happiness_gouv['country'].isin(selected_countries)]
-filter_hap_gouv['country'] = pd.Categorical(filter_hap_gouv['country'], categories=selected_countries, ordered=True)
+filter_hap_gouv.loc[:, 'country'] = pd.Categorical(filter_hap_gouv['country'], categories=selected_countries, ordered=True)
 filter_hap_gouv = filter_hap_gouv.sort_values(['year','country'])
 
 happiness = pd.melt(happiness, id_vars=['country', 'country_code', 'continent', 'avg_score'], value_vars=[str(year) for year in range(2005, 2019)],
