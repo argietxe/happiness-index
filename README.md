@@ -24,32 +24,32 @@ _regional differences and trends._
 
 ---
 
-![Screenshot1](screenshots/Screenshot1.png)
+![Screenshot1](screenshot/Screenshot1.png)
 
 ---
 
-![Screenshot2](screenshots/Screenshot2.png)
+![Screenshot2](screenshot/Screenshot2.png)
 
 ---
 
-![Screenshot3](screenshots/Screenshot3.png)
+![Screenshot3](screenshot/Screenshot3.png)
 
 ---
 
-![Screenshot4](screenshots/Screenshot4.png)
+![Screenshot4](screenshot/Screenshot4.png)
 
 ---
 
-![Screenshot5](screenshots/Screenshot5.png)
+![Screenshot5](screenshot/Screenshot5.png)
 
 ---
 
-![Screenshot6](screenshots/Screenshot6.png)
+![Screenshot6](screenshot/Screenshot6.png)
 
 ---
 
-![Screenshot7](screenshots/Screenshot7.png)
+![Screenshot7](screenshot/Screenshot7.png)
 
 ---
 
-![Screenshot8](screenshots/Screenshot8.png)
+![Screenshot8](screenshot/Screenshot8.png)
